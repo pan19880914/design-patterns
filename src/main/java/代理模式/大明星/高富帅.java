@@ -1,10 +1,10 @@
 package 代理模式.大明星;
 
 import lombok.extern.slf4j.Slf4j;
-import sun.misc.ProxyGenerator;
 
-import java.io.File;
-import java.io.FileOutputStream;
+/**
+ * 当使用动态代理模式的时候
+ */
 
 @Slf4j
 public class 高富帅 {
@@ -14,7 +14,8 @@ public class 高富帅 {
         大明星.约吃饭();
         log.info("------------------------");
         大明星.约逛街();
-//        byte[] $Proxy0s = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{李大璐.class});
+        //可以打印生成的代理类
+//        byte[] $Proxy0s = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{大明星.class});
 //        FileOutputStream fileOutputStream = new FileOutputStream(new File("D:\\123.class"));
 //        fileOutputStream.write($Proxy0s);
     }
